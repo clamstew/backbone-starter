@@ -1,6 +1,14 @@
 <html>
 <head>
   <title>Super Special Awesome Stock Ticker</title>
+  <style type="text/css">
+	.up {
+		color: green;
+	}
+	.down {
+		color: red;
+	}
+  </style>
 </head>
 <body>
 
@@ -13,7 +21,7 @@
 
   <script class="stock" type="text/template">
     <div class="stock">
-      <p>{{ name }} is currently {{ price }}</p>
+      	<p>{{ name }} is currently <span class="price">{{ price }}</span> | recent change amount: {{ recentchange }}</p>
     </div>
   </script>
 

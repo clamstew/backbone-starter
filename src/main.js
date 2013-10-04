@@ -1,4 +1,4 @@
-(function () {
+// (function () {
 
   // Create our stocks
   var yhoo = new Stock({ name: 'YHOO' });
@@ -39,4 +39,4 @@
   };
   updateLoop();
 
-})();
+// })();
