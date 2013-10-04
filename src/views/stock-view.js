@@ -5,11 +5,11 @@
   
   window.StockView = Backbone.View.extend({
     className: 'stock',
-    initialize: function() {
+    initialize: function () {
     	this.listenTo(this.model, 'change', this.render);
     }, 
-    render: function() {
-			var newHtml = stockTemplate({ name: this.model.get("price"), price: this.model.get("name") });
+    render: function () {
+			var newHtml = stockTemplate( this.model.toJSON() );
 			$(this.el).html(newHtml);
     }
   });
